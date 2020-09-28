@@ -13,6 +13,22 @@
     font-style: normal;
 }
 
+body
+{
+	background-color: rgb(255,250,240);
+	font-family: cantarellregular, 'Trebuchet MS', Arial, sans-serif;
+	color: rgb(59,59,59);
+}
+
+
+/*Eléments principaux*/
+
+#blocpage
+{
+	width: 900px;
+	margin:auto;
+}
+
 ol, ul
 {
 	list-style: none;
@@ -23,59 +39,128 @@ mark {
 	color: inherit;
 }
 
-
-/*Eléments principaux*/
-
-body
-{
-	background-color: rgb(255,250,240);
-	font-family: cantarellregular, 'Trebuchet MS', Arial, sans-serif;
-	color: rgb(59,59,59);
-}
-
-#blocpage
-{
-	width: 100%;
-	margin:auto;
-}
-
-section h1, footer h1, footer h2, nav ul
+section h1, footer h1, footer h2, nav ul, nav a
 {
 	font-family: cantarellregular, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 
-/*Header*/
-
-header
+a
 {
-	display: flex;
-	flex-direction: column;
+	text-decoration: none;
+	color:black;
 }
 
+a:hover
+{
+	color: rgb(209,104,104);
+
+}
+
+/*Header*/
 
 #illustration img
 {
 
-	width: :800px;
+	width: :900px;
 	height: 400px;
+	margin: auto;
+	margin-bottom: 15px;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 0px 4px #000000;
+
+}
+#illustration h1
+{
+	position: absolute;
+	top: 340px;
+	width: 250px;
+	height: 20px;
+	padding: 20px;
+	border-radius: 0px 0px 5px 5px;
+	background-color: rgba(142,219,177, 0.9);
+	font-size: 2em;
+
 }
 
-/*aside*/
+
+
+#bigsection
+{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+
+}
+
 #englobe
 {
 	display: flex;
-	margin-bottom: 15px;
+	flex-direction: column;
+	margin:auto;
+	width: 30% ;
+	background-color: rgb(142,219,177);
+	text-align: center;
+	padding: 30px;
+	height: 100%;
 }
 
-#aside
+aside
 {
- flex:1.2;
+
 
 }
 
-#section1
+aside p
 {
-	flex:3;
+	text-align: justify;
 }
+
+nav ul
+{
+text-align: left;
+}
+
+
+
+#grandesection
+{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width:70%;
+	padding-right: 50px;
+	text-align: justify;
+}
+
+section
+{
+	margin: auto;
+
+
+}
+
+#hobbie
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+
+
+footer h1
+{
+	text-align: center;
+	font-size: 1.6em;
+	background-color: rgba(142,219,177, 0.3)
+}
+
+footer h2
+{
+	font-size: 1em; 
+	text-align: center;
+}
+
