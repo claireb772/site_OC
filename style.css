@@ -106,23 +106,26 @@ a:hover
 	height: 100%;
 }
 
-aside
-{
-
-
-}
 
 aside p
 {
 	text-align: justify;
 }
 
-nav ul
+#liens
 {
-text-align: left;
+	text-align: center;
 }
 
+nav ul
+{
+	text-align: left;
+}
 
+#photo_claire
+{
+	text-align: center;
+}
 
 #grandesection
 {
@@ -164,3 +167,56 @@ footer h2
 	text-align: center;
 }
 
+/* responsive design*/
+
+@media all and (max-width: 1024px)
+{
+	#blocpage
+	{
+		width: auto;
+	}
+
+	#illustration img
+	{
+		display: none;
+	}
+
+	#illustration h1
+	{
+		position: relative;
+		top : 10px;
+		margin-bottom: 30px;
+		background-color: rgba(226,215,215,0.9);
+
+	}
+
+	#bigsection
+	{
+		flex-direction: column;
+	}
+
+	#englobe
+	{
+		width: auto;
+		flex-direction: column-reverse;
+	}
+
+	#photo_claire
+	{
+		float: right;
+		margin-left: 15px;
+	}
+
+	aside h2
+	{
+		text-align: right;
+		margin-bottom: 5px;
+
+	}
+
+	aside p:last-child
+	{
+		text-align: center;
+	}
+
+}
